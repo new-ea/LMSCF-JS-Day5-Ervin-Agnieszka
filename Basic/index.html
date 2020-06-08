@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sandwiches = `{ "sandwich": "hamburger", "calories": "260" }`;
+        var fries = `{ "fries_size": "Large French Fries", "calories": "570" }`;
+
+        let sandwichObj = JSON.parse(sandwiches);
+        let friesObj = JSON.parse(fries);
+        
+        let x = sandwichObj.sandwich;
+        let y = sandwichObj["calories"];
+
+        let i = friesObj["fries_size"];
+        let s = friesObj["calories"];
+        
+        document.write(
+            `My favorite sandwich is a <b>${x}</b> which has approximately <b>${y}</b> calories, along with it I enjoy eating <b>${i}</b> which have about <b>${s}</b> calories.`
+            );
+    </script>
+</body>
+</html>
