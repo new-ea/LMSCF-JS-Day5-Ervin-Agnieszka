@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
         li {
             border: 1px solid black;
             padding: 10px;
@@ -22,6 +26,11 @@
         #notRead {
             background-color: lightcoral;
         }
+
+        .bild {
+            width: 100%;
+            height: 80%;
+        }
     </style>
 </head>
 <body>
@@ -31,17 +40,17 @@
     <script>
         var mydata = JSON.parse(books);
         console.log(mydata);
-        
         document.write("<ul>");
         for (let i = 0; i < mydata.length; i++) {
             
             if (mydata[i].read == "y") {
-                document.write('<li id="read">');
+                   document.write('<li id="read">' + `<img class="bild" src="${mydata[i].image}">`);
                     document.write('<p>' + mydata[i].title + "</p>"); 
-                    document.write("<p>" + mydata[i].author + "</p>");
+                    document.write("<p >" + mydata[i].author + "</p>");
+
                 document.write("</li>");
             } else {
-                document.write('<li id="notRead">');
+                    document.write('<li id="notRead">' + `<img class="bild" src="${mydata[i].image}">`);
                     document.write("<p>" + mydata[i].title + "</p>"); 
                     document.write("<p>" + mydata[i].author + "</p>");
                 document.write("</li>");
