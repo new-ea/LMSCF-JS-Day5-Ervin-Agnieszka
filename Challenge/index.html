@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            height: 250px;
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- JSON DATA -->
+    <script src="data.json"></script>
+
+    <!-- OUTPUT -->
+    <div class="wrapper">
+        <div class="out"></div>
+    </div>
+
+    <!-- JS CODE -->
+    <script>
+        var myCars = JSON.parse(cars);
+        let out = document.querySelector(".out");
+        
+        for ( let i = 0; i < myCars.length; i++) {
+ 
+            const model = document.createTextNode(myCars[i].model);
+            const brand = document.createTextNode(myCars[i].brand);
+            const year = document.createTextNode(myCars[i].year);
+            const horsepower = document.createTextNode(myCars[i].horsepower);
+            const price = document.createTextNode(myCars[i].price);
+
+            const newDiv = document.createElement("div");
+            newDiv.classList.add("container");
+            out.appendChild(newDiv);
+
+            newDiv.appendChild(model);
+            newDiv.appendChild(brand);
+            newDiv.appendChild(year);
+            newDiv.appendChild(horsepower);
+            newDiv.appendChild(price);
+            
+        }
+        
+    </script>
+</body>
+</html>

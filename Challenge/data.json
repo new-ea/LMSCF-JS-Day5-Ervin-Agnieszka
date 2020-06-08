@@ -1,0 +1,75 @@
+var cars = 
+  `[
+    {
+      "model": "A7",
+      "brand": "Audi",
+      "year": "2013",
+      "horsepower": "109",
+      "price": "28771",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "525",
+      "brand": "BMW",
+      "year": "2015",
+      "horsepower": "77",
+      "price": "17849",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "E-Klasse",
+      "brand": "Mercedes",
+      "year": "2000",
+      "horsepower": "313",
+      "price": "37199",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "Panamera",
+      "brand": "Porsche",
+      "year": "2020",
+      "horsepower": "279",
+      "price": "10297",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "GLC",
+      "brand": "Mercedes",
+      "year": "2018",
+      "horsepower": "295",
+      "price": "24883",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "Mustang",
+      "brand": "Ford",
+      "year": "1860",
+      "horsepower": "636",
+      "price": "30730",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "Model S",
+      "brand": "Tesla",
+      "year": "2016",
+      "horsepower": "415",
+      "price": "41218",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "Model 3",
+      "brand": "Tesla",
+      "year": "2019",
+      "horsepower": "147",
+      "price": "33338",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    },
+    {
+      "model": "Q8",
+      "brand": "Audi",
+      "year": "1990",
+      "horsepower": "268",
+      "price": "10673",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autobild.de%2Fmarken-modelle%2Faudi%2Fa7%2Fc8%2F&psig=AOvVaw1snHPxs8Wrqcy7D7SQbBWC&ust=1591703744381000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi5x9SU8ukCFQAAAAAdAAAAABAD"
+    }
+  ]`;
