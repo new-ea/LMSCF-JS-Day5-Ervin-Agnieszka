@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            list-style: none;
+        }
+
+        #read {
+            background-color: lightgreen;
+        }
+
+        #notRead {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="data.json" type="text/javascript"></script>
+
+    <script>
+        var mydata = JSON.parse(books);
+        console.log(mydata);
+        
+        document.write("<ul>");
+        for (let i = 0; i < mydata.length; i++) {
+            
+            if (mydata[i].read == "y") {
+                document.write('<li id="read">');
+                    document.write('<p>' + mydata[i].title + "</p>"); 
+                    document.write("<p>" + mydata[i].author + "</p>");
+                document.write("</li>");
+            } else {
+                document.write('<li id="notRead">');
+                    document.write("<p>" + mydata[i].title + "</p>"); 
+                    document.write("<p>" + mydata[i].author + "</p>");
+                document.write("</li>");
+            }      
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>
