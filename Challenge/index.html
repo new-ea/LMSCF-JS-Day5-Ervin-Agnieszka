@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .out {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-wrap: wrap;
             padding: 10px;
             margin: 10px;
-            width: 250px;
+            width: 300px;
             height: 250px;
-            background-color: lightgreen;
+            background-color: lightgray;
+        }
+
+        .cars {
+            margin: 5px;
+        }
+
+        .image {
+            width: 100%;
+            height: 200px;
         }
 
     </style>
@@ -20,9 +41,7 @@
     <script src="data.json"></script>
 
     <!-- OUTPUT -->
-    <div class="wrapper">
-        <div class="out"></div>
-    </div>
+    <div class="out"></div>
 
     <!-- JS CODE -->
     <script>
@@ -36,16 +55,39 @@
             const year = document.createTextNode(myCars[i].year);
             const horsepower = document.createTextNode(myCars[i].horsepower);
             const price = document.createTextNode(myCars[i].price);
+            // const image = document.createTextNode(myCars[i].image);
 
             const newDiv = document.createElement("div");
             newDiv.classList.add("container");
             out.appendChild(newDiv);
 
-            newDiv.appendChild(model);
-            newDiv.appendChild(brand);
-            newDiv.appendChild(year);
-            newDiv.appendChild(horsepower);
-            newDiv.appendChild(price);
+            const img = document.createElement("img");
+            img.classList.add("image");
+            img.src = "audi.png";
+            newDiv.appendChild(img);
+            
+            const newP1 = document.createElement("p");
+            const newP2 = document.createElement("p");
+            const newP3 = document.createElement("p");
+            const newP4 = document.createElement("p");
+            const newP5 = document.createElement("p");
+            newP1.classList.add("cars");
+            newP2.classList.add("cars");
+            newP3.classList.add("cars");
+            newP4.classList.add("cars");
+            newP5.classList.add("cars");
+
+            newDiv.appendChild(newP1);
+            newDiv.appendChild(newP2);
+            newDiv.appendChild(newP3);
+            newDiv.appendChild(newP4);
+            newDiv.appendChild(newP5);
+
+            newP1.appendChild(model);
+            newP2.appendChild(brand);
+            newP3.appendChild(year);
+            newP4.appendChild(horsepower);
+            newP5.appendChild(price);
             
         }
         
