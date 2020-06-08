@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>intermediate</title>
+</head>
+<body>
+	<script src="data.json" type="text/javascript"></script>
+	<script>
+var mydata = JSON.parse(employees);
+
+
+document.write("<table border='2'>");
+document.write("<tr>");
+	document.write("<th>userId</th>");
+	document.write("<th>first Name</th>");
+	document.write("<th>last Name</th>");
+	document.write("<th>e-mail</th>");
+	document.write("<th>job title</th>");
+	document.write("<th>salary</th>");
+document.write("</tr>");
+for(i = 0; i < employees.length; i++) {
+document.write("<tr>");
+document.write("<td>");
+document.write(mydata[i].userId);
+document.write("</td>");
+document.write("<td>");
+document.write(mydata[i].firstName);
+document.write("</td>");
+document.write("<td>");
+document.write(mydata[i].lastName);
+document.write("</td>");
+document.write("<td>");
+document.write(mydata[i].emailAddress);
+document.write("</td>");
+document.write("<td>");
+document.write(mydata[i].jobTitle);
+document.write("</td>");
+document.write("<td>");
+document.write(mydata[i].salary);
+document.write("</td>");
+document.write("</tr>");
+}
+document.write("</table>");
+
+
+	</script>
+	
+
+</body>
+</html>

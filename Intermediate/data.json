@@ -1,0 +1,70 @@
+var employees = 
+  `[
+    {
+      "userId": "29893940006",
+      "firstName": "Tom",
+      "lastName": "Jakobson",
+      "emailAddress": "tom.k.jakobson@gmail.com",
+      "jobTitle" : "Developer",
+      "salary" : "2000"
+  }, {
+     "userId": "29893940007",
+      "firstName": "Jan",
+      "lastName": "Obama",
+      "emailAddress": "jan.obama@gmail.com",
+      "jobTitle" : "Doctor",
+      "salary" : "4000"
+  }, {
+     "userId": "29893940008",
+      "firstName": "Paul",
+      "lastName": "Putin",
+      "emailAddress": "paul.putin@gmail.com",
+      "jobTitle" : "Trainer",
+      "salary" : "2400" 
+  },
+   {
+      "userId": "29893940009",
+      "firstName": "Chris",
+      "lastName": "Trump",
+      "emailAddress": "ch.k.trump@gmail.com",
+      "jobTitle" : "Teacher",
+      "salary" : "1200" 
+  }, {
+     "userId": "29893940001",
+      "firstName": "Hansi",
+      "lastName": "Kurz",
+      "emailAddress": "hansikurz@gmail.com",
+      "jobTitle" : "Politician",
+      "salary" : "40000" 
+  }, {
+     "userId": "29893940002",
+      "firstName": "Philip",
+      "lastName": "Kern",
+      "emailAddress": "philip_kern@gmail.com",
+      "jobTitle" : "Translator",
+      "salary" : "2000" 
+  },
+   {
+      "userId": "29893940003",
+      "firstName": "Valentin",
+      "lastName": "Mayer",
+      "emailAddress": "v.k.mayer@gmail.com",
+      "jobTitle" : "Student",
+      "salary" : "400" 
+  }, {
+     "userId": "29893940004",
+      "firstName": "Susi",
+      "lastName": "Dana",
+      "emailAddress": "patrik.k.jonathan@gmail.com",
+      "jobTitle" : "Develo",
+      "salary" : "2000" 
+  }, {
+     "userId": "29893940005",
+      "firstName": "Anna",
+      "lastName": "Schmidt",
+      "emailAddress": "patrik.k.jonathan@gmail.com",
+      "jobTitle" : "Developer4",
+      "salary" : "2000" 
+  }
+
+]`;
